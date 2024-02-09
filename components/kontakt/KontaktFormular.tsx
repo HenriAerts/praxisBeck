@@ -10,14 +10,14 @@ const KontaktFormular = () => {
             </h2>
             <div className='flex flex-col md:flex-row gap-3 lg:gap-5'>
 
-                <div className='w-full md:w-3/5 border-2 border-red-500 bg-white rounded-[30px] p-24'>
+                <div className='w-full md:w-3/5 border-2 border-red-500 bg-white rounded-[30px] p-16'>
                     <Form/>
                 </div>
-                {/* <div className=' md:w-2/5 border-2 border-red-500 bg-white rounded-[30px] p-8'>
+                <div className=' md:w-2/5 border-2 border-red-500 bg-white rounded-[30px] p-8 flexBetween flex-col'>
                     <h2 className='regular-h4 leading-tight text-blue-10 mb-36'>
                         Info
                     </h2>
-                    <div className='flex flex-col gap-5'>
+                    <div className='flex item-end flex-col gap-5'>
                         <p className='regular-p text-blue-10'>
                             +49 1234 56789123
                         </p>
@@ -32,7 +32,7 @@ const KontaktFormular = () => {
                         </p>
                     </div>
                     
-                </div> */}
+                </div>
 
             </div>
         </div>

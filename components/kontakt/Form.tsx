@@ -32,18 +32,19 @@ const Form = () => {
 
   return (
     <div>
-        <form className='gap-5 flex flex-col flexCenter' onSubmit={handleSubmit}>
+        <form className='gap-8 flex flex-col flexCenter' onSubmit={handleSubmit}>
             <div className='w-full flex flex-col'>
-                <label htmlFor="name">Name</label>
-                <input required type="text" id='name' autoComplete='off' className=' bg-blue-30 rounded-full px-5 py-3'/>
+                {/* <label htmlFor="name">Name</label> */}
+                <input required type="text" id='name' placeholder="Name" autoComplete='off' className=' bg-blue-30 rounded-full px-5 py-3'/>
             </div>
             <div className='w-full flex flex-col'>
-                <label htmlFor="email">Email</label>
-                <input required type="text" id='email' autoComplete='off' className=' bg-blue-30 rounded-full px-5 py-3'/>
+                {/* <label htmlFor="email">Email</label> */}
+                <input required type="text" id='email' placeholder="Email" autoComplete='off' className=' bg-blue-30 rounded-full px-5 py-3'/>
             </div>
             <div className='w-full flex flex-col'>
-                <label htmlFor="massage">Nachricht</label>
+                {/* <label htmlFor="massage">Nachricht</label> */}
                 <textarea 
+                    placeholder="Nachricht"
                     required
                     id='massage'
                     minLength={10}
