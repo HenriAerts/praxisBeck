@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -10,11 +10,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: , 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -27,7 +27,97 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .btn_dark { 
+    @apply px-9 py-3 md:px-10 md:py-4 bg-blue-10 rounded-full ; 
   }
+  .btn_bright { 
+    @apply px-9 py-3 md:px-9 md:py-4 bg-white rounded-full ;
+  }
+  .btn_medium { 
+    @apply px-9 py-3 md:px-9 md:py-2 bg-blue-30 rounded-full ;
+  }
+
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .max-container2 {
+    @apply mx-auto max-w-[800px];
+  }
+
+  .max-wrapper {
+    @apply mx-auto max-w-none;
+  }
+
+  /* .padding-container {
+    @apply px-6 lg:px-20;
+  } */
+
+  .padding-container {
+    @apply px-6 ;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
+
+  /* FONTS */
+  .regular-h1{
+    @apply text-[50px] font-[500] md:text-[75px] lg:text-[75px];
+  }
+
+  .regular-h2{
+    @apply text-[50px] font-[500] md:text-[75px] lg:text-[75px] ;
+  }
+
+  .regular-h3{
+    @apply text-[24px] font-[300] md:text-[36px] leading-tight;
+  }
+
+  .regular-h4 {
+    @apply text-[24px] font-[400] md:text-[64px];
+  }
+
+  .regular-h5 {
+    @apply text-[20px] font-[400] md:text-[24px] ;
+  }
+
+  .regular-btn {
+    @apply text-[14px] font-[400] md:text-[16px];
+  }
+
+  .regular-p{
+    @apply text-[14px] font-[300] md:text-[16px] leading-normal;
+  }
+  .regular-p1{
+    @apply text-[12px] font-[300] md:text-[14px] leading-normal;
+  }
+  .regular-p2{
+    @apply text-[10px] font-[300] md:text-[12px] leading-normal;
+  }
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
